@@ -2,8 +2,8 @@
 
 from odoo import models, fields, api
 
-class my_module(models.Model):
-    _name = 'my_module.my_module'
+class restricoes(models.Model):
+    _name = 'restricoes.restricoes'
 
     name = fields.Char()
     value = fields.Integer()
