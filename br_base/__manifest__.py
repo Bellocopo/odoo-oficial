@@ -32,7 +32,7 @@
         'views/base_assets.xml',
         'security/ir.model.access.csv',
     ],
-    'qweb': ['static/src/xml/*.xml'],
+    # 'qweb': ['static/src/xml/*.xml'],
     'post_init_hook': 'post_init',
     'installable': True,
     'auto_install': True,
