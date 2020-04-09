@@ -126,7 +126,7 @@ class ResCompany(models.Model):
 
     city_id = fields.Many2one(
         compute=_get_address_data, inverse='_set_city_id',
-        comodel_name='res.state.city', string="City", multi='address')
+        comodel_name='res.state.city', string="Cidade", multi='address')
 
     district = fields.Char(
         compute=_get_address_data, inverse='_set_br_district', size=32,

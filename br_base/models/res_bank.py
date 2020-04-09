@@ -12,11 +12,11 @@ from odoo.addons.base.models.res_bank import sanitize_account_number
 class ResBank(models.Model):
     _inherit = 'res.bank'
 
-    number = fields.Char(u'Number', size=10)
+    number = fields.Char('Number', size=10)
     street2 = fields.Char('Complement', size=128)
     district = fields.Char('District', size=32)
     city_id = fields.Many2one(comodel_name='res.state.city',
-                              string=u'City',
+                              string='Cidade',
                               domain="[('state_id','=',state_id)]")
 
     country_id = fields.Many2one(comodel_name='res.country',
