@@ -21,7 +21,7 @@ class ResBank(models.Model):
 
     country_id = fields.Many2one(comodel_name='res.country',
                                  related='country',
-                                 string=u'Country')
+                                 string='País')
     state_id = fields.Many2one(comodel_name='res.country.state',
                                related='state',
                                string='State')
